@@ -5,3 +5,4 @@
 Return the filename and line number of the calling function
 
 [![Build Status](https://secure.travis-ci.org/hapijs/pinpoint.png?branch=master)](http://travis-ci.org/hapijs/pinpoint)
+
