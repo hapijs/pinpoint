@@ -1,7 +1,7 @@
 {
     "name": "@hapi/pinpoint",
     "description": "Return the filename and line number of the calling function",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "repository": "git://github.com/hapijs/pinpoint",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
