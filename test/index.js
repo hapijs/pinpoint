@@ -28,7 +28,7 @@ describe('Pinpoint', () => {
 
         it('returns location or upper caller', () => {
 
-            expect(Pinpoint.location(2).filename).to.contain('@hapi/lab');
+            expect(Pinpoint.location(2).filename).to.contain(Path.join('@hapi', 'lab'));
         });
     });
 });
