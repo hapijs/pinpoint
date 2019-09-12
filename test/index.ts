@@ -10,7 +10,7 @@ const { expect } = Lab.types;
 Pinpoint.location();
 Pinpoint.location(1);
 
-expect.type<Pinpoint.deepEqual.Location>(Pinpoint.location());
+expect.type<Pinpoint.location.Location>(Pinpoint.location());
 expect.type<string>(Pinpoint.location().filename);
 expect.type<number>(Pinpoint.location().line);
 
