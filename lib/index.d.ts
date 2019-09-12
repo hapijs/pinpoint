@@ -5,9 +5,9 @@ Returns the filename and line number of the caller in the call stack
 
 @return an object with the filename and line number.
 */
-export function location(depth?: number): deepEqual.Location;
+export function location(depth?: number): location.Location;
 
-declare namespace deepEqual {
+declare namespace location {
 
     interface Location {
 
