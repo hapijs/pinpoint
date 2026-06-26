@@ -1,26 +1,43 @@
 {
     "name": "@hapi/pinpoint",
-    "description": "Return the filename and line number of the calling function",
     "version": "2.0.1",
-    "repository": "git://github.com/hapijs/pinpoint",
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "files": [
-        "lib"
-    ],
+    "description": "Return the filename and line number of the calling function",
     "keywords": [
         "utilities"
     ],
-    "dependencies": {},
-    "devDependencies": {
-        "@hapi/code": "^9.0.3",
-        "@hapi/lab": "^25.1.2",
-        "@types/node": "^14.18.36",
-        "typescript": "4.0.x"
+    "license": "BSD-3-Clause",
+    "repository": "git://github.com/hapijs/pinpoint",
+    "files": [
+        "lib",
+        "API.md",
+        "README.md"
+    ],
+    "type": "module",
+    "types": "lib/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./lib/index.d.ts",
+            "default": "./lib/index.js"
+        }
     },
     "scripts": {
-        "test": "lab -a @hapi/code -t 100 -L -Y",
-        "test-cov-html": "lab -a @hapi/code -t 100 -L -r html -o coverage.html"
+        "test": "vitest run --coverage",
+        "typecheck": "tsc --noEmit",
+        "lint": "oxlint",
+        "lint:fix": "oxlint --fix",
+        "fmt": "oxfmt --check",
+        "fmt:fix": "oxfmt",
+        "check": "npm run lint && npm run fmt && npm run typecheck && npm test"
     },
-    "license": "BSD-3-Clause"
+    "devDependencies": {
+        "@hapi/oxc-plugin": "^1.0.1",
+        "@vitest/coverage-v8": "^4.1.9",
+        "oxfmt": "^0.55.0",
+        "oxlint": "^1.70.0",
+        "typescript": "^6.0.3",
+        "vitest": "^4.1.9"
+    },
+    "engines": {
+        "node": ">=22"
+    }
 }
