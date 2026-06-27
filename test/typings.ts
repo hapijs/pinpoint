@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, it } from 'vitest';
 
-import * as Pinpoint from '../lib/index.js';
+import * as Pinpoint from '../src/index.mjs';
 
 describe('typings', () => {
     describe('location', () => {
