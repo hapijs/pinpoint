@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import * as Pinpoint from '../src/index.mjs';
+import * as Pinpoint from '../src/index.js';
 
 describe('Pinpoint', () => {
     describe('location()', () => {
