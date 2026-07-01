@@ -1,6 +1,6 @@
 {
     "name": "@hapi/pinpoint",
-    "version": "2.0.1",
+    "version": "3.0.0",
     "description": "Return the filename and line number of the calling function",
     "keywords": [
         "utilities"
